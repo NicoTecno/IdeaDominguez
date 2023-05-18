@@ -1,0 +1,38 @@
+{
+  "lista1": [
+    {
+      "id": 1,
+      "nombre": "producto1",
+      "precio": 10.99
+    },
+    {
+      "id": 2,
+      "nombre": "producto2",
+      "precio": 20.99
+    },
+    {
+      "id": 3,
+      "nombre": "producto3",
+      "precio": 30.99
+    },
+    {
+      "id": 4,
+      "nombre": "producto4",
+      "precio": 50
+    }
+  ],
+  "lista2": [
+    {
+      "nombre": "producto4",
+      "precio": 40.99
+    },
+    {
+      "nombre": "producto5",
+      "precio": 50.99
+    },
+    {
+      "nombre": "producto6",
+      "precio": 60.99
+    }
+  ]
+}

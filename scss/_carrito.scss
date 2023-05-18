@@ -1,0 +1,10 @@
+.carrito__producto {
+  display: flex;
+  //   display: inline;
+  flex-direction: row;
+  color: green;
+}
+
+.carrito__producto h3 {
+  margin-right: 20px;
+}

@@ -1,0 +1,402 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.card {
+  width: 300px;
+  height: 400px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ccc;
+  align-items: center;
+  padding: 20px;
+}
+
+.card img {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+
+.card h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.card .add-to-cart {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.card .add-to-cart:hover {
+  background-color: #0069d9;
+}
+
+.container {
+  width: 100%;
+  max-width: 2000px;
+  margin: 0;
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 0.5fr 5fr;
+  background-color: green;
+}
+
+.filters {
+  width: 100%;
+}
+
+#productos {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 40px;
+  background-color: #007bff;
+}
+
+.copyright {
+  font-size: small;
+}
+
+.conteiner_consulta {
+  background-color: grey;
+}
+
+.input_estilo {
+  border-color: rgb(100, 240, 100);
+  border-radius: 1rem;
+  border-width: 0.15rem;
+}
+
+.btn_consulta {
+  color: white;
+  background-color: rgb(63, 146, 63);
+  border-radius: 3rem;
+  font-size: 1.5rem;
+}
+.btn_consulta:hover {
+  background-color: white;
+  color: rgb(63, 146, 63);
+}
+
+.conteiner_form_consulta {
+  border-width: 0.3rem;
+  border-style: solid;
+  border-color: rgb(130, 187, 44);
+  color: rgb(255, 255, 255);
+  background-color: rgb(63, 70, 75);
+}
+
+/*BORDES ANIMADOS*/
+.tarjeta {
+  top: 0;
+  position: relative;
+  overflow: hidden;
+  border-width: -3rem;
+  border-radius: 8rem;
+}
+
+@media (max-width: 575px) {
+  .tarjeta {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+.card_generica {
+  z-index: 0;
+  background-color: transparent;
+}
+
+.destacados {
+  margin-bottom: 1rem;
+  z-index: 1;
+  background-color: black;
+  border-radius: 8rem;
+  padding: 2rem;
+}
+
+@media (min-width: 992px) {
+  .destacados_margin_der {
+    margin-right: 2rem;
+  }
+}
+@media (min-width: 1400px) {
+  .destacados_margin_der {
+    margin-right: 6rem;
+  }
+}
+.tarjeta::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+  background-size: 300% 300%;
+  z-index: -1;
+  animation: animationGradient 3s ease alternate infinite;
+}
+
+@keyframes animationGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 50% 100%;
+  }
+  100% {
+    background-position: 100% 0%;
+  }
+}
+.marcas {
+  height: 5rem;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  object-fit: contain;
+}
+
+/*animacion marcas*/
+.slider {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  overflow: hidden;
+}
+.slider .slide-track {
+  display: flex;
+  animation: scroll 40s linear infinite;
+  -webkit-animation: scroll 40s linear infinite;
+  width: 1040px;
+}
+
+@keyframes scroll {
+  0% {
+    -webkit-transform: translateX(-100vw);
+    transform: translateX(-100vw);
+  }
+  100% {
+    -webkit-transform: translateX(100vw);
+    transform: translateX(100vw);
+  }
+}
+/*FUNCIONA EN LA PANTALLA MAS GRANDE*/
+.mapa {
+  width: 10%;
+}
+
+.pcs {
+  width: 10rem;
+  height: 10rem;
+}
+
+.teclado, .teclado_ajustados {
+  width: 15rem;
+  height: 10rem;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+
+.teclado_ajustados {
+  margin-top: 1rem;
+}
+
+.iconos_productos {
+  width: 3rem;
+}
+
+.donde {
+  background-color: #1c1d1d;
+  border-radius: 2rem;
+  color: aliceblue;
+  text-justify: distribute;
+}
+
+@media (max-width: 575px) {
+  .donde {
+    background-clip: content-box;
+    border-radius: 3rem;
+  }
+}
+.mapa_google {
+  width: 90vw;
+  height: 67.5vw;
+  max-width: 600px;
+  max-height: 500px;
+  border: none;
+}
+
+.logo {
+  width: 160px;
+  height: 70px;
+}
+
+.redes_sociales {
+  font-size: 3rem;
+  color: rgb(100, 240, 100);
+  margin: 1rem;
+}
+
+.navbar__color {
+  background-color: #303131;
+}
+
+.submenu__btn {
+  background-color: #303131;
+  color: white;
+}
+
+#tamanio_carrito {
+  width: 60px;
+  height: 60px;
+  background-color: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  width: 300px;
+  background: white;
+  border-radius: 10px;
+  padding: 20px 25px 40px;
+}
+
+header h2 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+header p {
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+.price-input {
+  margin: 30px 0 35px;
+  display: flex;
+  width: 100%;
+}
+
+.price-input .field {
+  height: 45px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  /* background-color: red; */
+}
+
+.field input {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  text-align: center;
+  outline: none;
+  margin-left: 12px;
+  border: 1px solid #999;
+  -moz-appearance: textfield;
+}
+
+/* esto es para sacar las flechas del input */
+/* input[type="number"]::-webkit-outer-spin-button,
+  input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  } */
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.price-input .separator {
+  width: 130px;
+  display: flex;
+  font-size: 19px;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider {
+  height: 5px;
+  border-radius: 5px;
+  background: #ddd;
+  position: relative;
+}
+
+.slider .progress {
+  height: 5px;
+  left: 25%;
+  right: 25%;
+  position: absolute;
+  border-radius: 5px;
+  background: #17a2b8;
+}
+
+.range-input {
+  position: relative;
+}
+
+.range-input input {
+  position: absolute;
+  top: -5px;
+  height: 5px;
+  width: 100%;
+  background: none;
+  pointer-events: none;
+  -webkit-appearance: none;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  height: 17px;
+  width: 17px;
+  border-radius: 50%;
+  pointer-events: auto;
+  -webkit-appearance: none;
+  background: #17a2b8;
+}
+
+input[type=range]::-moz-range-thumb {
+  height: 17px;
+  width: 17px;
+  border: none;
+  border-radius: 50%;
+  pointer-events: auto;
+  -moz-appearance: none;
+  background: #17a2b8;
+}
+
+.carrito__producto {
+  display: flex;
+  flex-direction: row;
+  color: green;
+}
+
+.carrito__producto h3 {
+  margin-right: 20px;
+}
+
+/*# sourceMappingURL=style.css.map */

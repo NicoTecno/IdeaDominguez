@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- AGREGE SEO ON-PAGE -->
+    <meta
+      name="description"
+      content="Pcs armadas, monitores, teclados.Encontra esto y mucho mas en nuestro sitio web.Contactanos y recibi asesoramiento personalizado"
+    />
+    <meta
+      name="keywords"
+      content="PCS ARMADAS, MONITORES, TECLADOS, COMPRAR, NICOTECH, PERIFERICOS"
+    />
+    <link
+      rel="shortcut icon"
+      href="../imgs/icono_pagina/computer.png"
+      type="../image/x-icon"
+    />
+    <title>Nico Tech</title>
+    <!-- <link rel="stylesheet" href="bootstrap/css/bootstrap.css" /> -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+        <nav
+          class="navbar navbar-expand-lg navbar__color"
+          data-bs-theme="dark"
+        >
+          <div class="container-fluid">
+  
+            <a href="../index.html"><img src="../imgs/Logo_4.png" class="logo" alt="Logo de la empresa" /></a>
+              <span class="navbar-toggler-icon boton__navbar"></span>
+            </button>
+           
+              <form class="d-flex" role="search">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button class="btn btn-outline-success" type="submit">
+                  Search
+                </button>
+              </form>
+              <img src="../imgs/iconos/carrito-de-compras.png" id="tamanio_carrito" onclick="vista_carrito()" alt="">
+            </div>
+          </div>
+        </nav>
+        <!-- PROBANDOOOO -->
+        
+        <nav
+          class="navbar navbar-expand-lg navbar__color"
+          data-bs-theme="dark"
+        >
+          <div class="container-fluid">
+            <button
+              class="navbar-toggler bg-light"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarTogglerDemo02"
+              aria-controls="navbarTogglerDemo02"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon boton__navbar"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center">
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="index.html">Arma tu Pc</a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link active text-white"
+                    href="productos.html"
+                    >Pcs Armadas</a
+                  >
+                </li>
+                <div class="dropdown">
+                  <button class="btn submenu__btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Hardware
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="productos.html">Procesadores</a></li>
+                    <li><a class="dropdown-item" href="productos.html">Mothers</a></li>
+                    <li><a class="dropdown-item" href="productos.html">Almacenamiento</a></li>
+                    <li><a class="dropdown-item" href="productos.html">Memorias Ram</a></li>
+                    <li><a class="dropdown-item" href="productos.html">Fuentes</a></li>
+                  </ul>
+                </div>
+                </li>
+                <li class="nav-item">
+                  <div class="dropdown">
+                    <button class="btn submenu__btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Periféricos
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="productos.html">Teclados</a></li>
+                      <li><a class="dropdown-item" href="productos.html">Mouses</a></li>
+                      <li><a class="dropdown-item" href="productos.html">Monitores</a></li>
+                      <li><a class="dropdown-item" href="productos.html">Auriculares</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="consulta.html"
+                    >Consulta</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <!-- DESDE ACA ES TODO PRODUCTOS -->
+
+      <div class="container">
+        <div class="filters">
+          <!-- Aquí se pueden agregar los filtros -->
+          <!-- <label for="price-range">Price range:</label>
+          <input type="range" id="price-range" name="price-range" min="0" max="1000" step="10"> -->
+
+          <div class="wrapper">
+            <header>
+              <h2>Price Ranger</h2>
+            </header>
+            <div class="price-input">
+              <div class="field">
+                <span>Min</span>
+                <input type="number" class="input-min" value="1" />
+              </div>
+              <div class="separator">-</div>
+              <div class="field">
+                <span>Max</span>
+                <input type="number" class="input-max" value="7500" />
+              </div>
+            </div>
+            <div class="slider">
+              <div class="progress"></div>
+            </div>
+            <div class="range-input">
+              <input
+                type="range"
+                class="range-min"
+                min="0"
+                max="10000"
+                value="2500"
+              />
+              <input
+                type="range"
+                class="range-max"
+                min="0"
+                max="10000"
+                value="7500"
+              />
+            </div>
+          </div>
+
+        </div>
+        <div id="productos">
+          <!-- Aquí se pueden agregar los productos -->
+            <!-- <div class="card" id="">
+            <img src="product-1.jpg" alt="">
+            <h3>Product 1000</h3>
+            <p>Description of product 1.</p>
+            <button class="add-to-cart">Add to cart</button>
+            </div> -->
+        </div>
+      </div>
+
+      <div id="carrito">
+        <h2>Carrito de compras</h2>
+        <ul>
+          <!-- Lista de productos en el carrito -->
+        </ul>
+        <p>Total: $<span id="total">0.00</span></p>
+        <button id="checkout">Checkout</button>
+
+      </div>
+
+        
+          
+
+    <script src="../js/main.js"></script>
+  </body>
+</html>

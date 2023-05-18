@@ -1,0 +1,77 @@
+.mapa {
+  width: 10%;
+}
+
+.pcs {
+  width: 10rem;
+  height: 10rem;
+}
+
+.teclado {
+  width: 15rem;
+  height: 10rem;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+
+.teclado_ajustados {
+  @extend .teclado;
+  margin-top: 1rem;
+}
+
+.iconos_productos {
+  width: 3rem;
+}
+
+.donde {
+  background-color: #1c1d1d;
+  border-radius: 2rem;
+  color: aliceblue;
+  text-justify: distribute;
+  //   margin-left: 3rem;
+}
+
+@media (max-width: 575px) {
+  .donde {
+    background-clip: content-box;
+    border-radius: 3rem;
+  }
+}
+
+.mapa_google {
+  width: 90vw;
+  height: calc(0.75 * 90vw);
+  max-width: 600px;
+  max-height: 500px;
+  border: none;
+}
+
+.logo {
+  width: 160px;
+  height: 70px;
+}
+
+.redes_sociales {
+  font-size: 3rem;
+  color: $color_verde;
+  margin: 1rem;
+}
+
+.navbar__color {
+  // background-color: grey;
+  background-color: #303131;
+}
+
+.submenu__btn {
+  background-color: #303131;
+  color: white;
+}
+
+#tamanio_carrito {
+  width: 60px;
+  height: 60px;
+  background-color: white;
+}
