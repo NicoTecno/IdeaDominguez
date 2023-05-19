@@ -44,7 +44,7 @@
   background-color: #0069d9;
 }
 
-.container {
+.contenedor__productos {
   width: 100%;
   max-width: 2000px;
   margin: 0;
@@ -269,12 +269,6 @@
   background-color: white;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 .wrapper {
   width: 300px;
   background: white;
@@ -340,14 +334,14 @@ input[type=number] {
   justify-content: center;
 }
 
-.slider {
+.slider__rango--precio {
   height: 5px;
   border-radius: 5px;
   background: #ddd;
   position: relative;
 }
 
-.slider .progress {
+.slider__rango--precio .progress {
   height: 5px;
   left: 25%;
   right: 25%;

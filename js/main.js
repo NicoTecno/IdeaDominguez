@@ -54,7 +54,7 @@ cargar_json();
 // ESTA PARTE ES PARA EL ARANGO DE PRECIOS
 const rangeInput = document.querySelectorAll(".range-input input"),
   priceInput = document.querySelectorAll(".price-input input"),
-  progress = document.querySelector(".slider .progress");
+  progress = document.querySelector(".slider__rango--precio .progress");
 
 let priceGap = 1000;
 
