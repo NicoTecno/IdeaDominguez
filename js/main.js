@@ -151,13 +151,6 @@ listaProductos.addEventListener("click", function (event) {
 //PASAR A LA SECCION DE COMPRA (OCULTO EL CONTEINER DE LOS PRODUCTOS Y FILTROS)
 const listaProductosCarrito = document.querySelector("#carrito ul");
 
-//prueba
-// function buscar_producto_a_borrar_carrito(lista, id_buscado){
-
-// }
-
-// var lista_carrito_eliminar = [];
-
 ///////////////////////////////////
 //ESTOY TRABAJANDO ACAAA AHORAA
 ////////////////////////////////////
@@ -165,15 +158,16 @@ const listaProductosCarrito = document.querySelector("#carrito ul");
 listaProductosCarrito.addEventListener("click", function (event) {
   if (event.target.classList.contains("remove")) {
     const idProducto = event.target.dataset.productoId;
-    for (i = 0; i < lista_mostrar.length; i++) {
-      if (lista_mostrar[i][0].id == idProducto) {
-        if (lista_mostrar[i][1] > 1) {
-          lista_mostrar[i][1] = lista_mostrar[i][1] - 1;
-          mostrar_carrito_reset(lista_mostrar);
-        } else {
-          lista_mostrar.splice(i, 1);
-          mostrar_carrito_reset(lista_mostrar);
-        }
+    console.log(lista_carrito);
+    for (i = 0; i < lista_carrito.length; i++) {
+      if (lista_carrito[i].id == idProducto) {
+        // console.log("antes de quitar elemento");
+        console.log(lista_carrito.length);
+        lista_carrito.splice(i, 1);
+        console.log(lista_carrito.length);
+        console.log("despues de quitar elemento");
+        mostrar_carrito();
+        break;
       }
     }
   }
@@ -217,10 +211,17 @@ function mostrar_carrito_reset(lista_nueva) {
     listaProductosCarrito.append(div);
   });
 }
-
+var primera_vez = true;
 function mostrar_carrito() {
   borrar_carrito();
-  lista_mostrar = crear_lista_objetos_con_cantidad(lista_carrito);
+  if (primera_vez) {
+    lista_mostrar = crear_lista_objetos_con_cantidad(lista_carrito);
+    primera_vez = false;
+  } else {
+    lista_mostrar = [];
+    lista_mostrar = crear_lista_objetos_con_cantidad(lista_carrito);
+  }
+
   // console.log("LISTA MOSTRARRRRRRRRRRR");
   // console.log(lista_mostrar);
   lista_mostrar.forEach(function (elemento) {
